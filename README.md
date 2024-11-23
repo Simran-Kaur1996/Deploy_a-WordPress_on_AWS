@@ -7,6 +7,24 @@ This repository contains the resources and scripts used to deploy a WordPress we
 
 The purpose of the project was to deploy a secure, scalable and resilient WordPress website utilizing the AWS infrastructure. The website has to be able to reactively adjust its level of resources with respect to traffic that would be witnessed at a given time, be distributed for resilience across at least two availability zones with appropriate security measures in place that would include encryption. In turn, it should also leverage the AWS owned services to reduce the workload associated with the management of the infrastructure. 
 
+## Architecture Overview
+
+The WordPress website is hosted on EC2 instances within a highly available and secure architecture that includes:
+
+- **Virtual Private Cloud (VPC):** Configured with both public and private subnets across two Availability Zones (AZs) for fault tolerance and high availability.
+- **Internet Gateway:** Allows communication between instances in the VPC and the internet.
+- **Security Groups:** Acts as a virtual firewall to control inbound and outbound traffic.
+- **Public Subnets:** Used for hosting infrastructure components like the NAT Gateway and Application Load Balancer (ALB), which facilitate external access and load balancing.
+- **Private Subnets:** Hosts the web servers to enhance security by limiting direct exposure to the internet.
+- **EC2 Instance Connect Endpoint:** Provides secure SSH access to the EC2 instances in both public and private subnets.
+- **Application Load Balancer (ALB):** Distributes incoming web traffic across multiple EC2 instances for better performance and fault tolerance.
+- **Auto Scaling Group (ASG):** Ensures that the correct number of EC2 instances are running based on traffic, providing elasticity and availability.
+- **Amazon RDS:** Managed relational database service for storing WordPress data.
+- **Amazon EFS:** A scalable file storage system for storing WordPress files across multiple instances.
+- **AWS Certificate Manager:** Provides SSL/TLS certificates to secure communications between users and the web servers.
+- **AWS Simple Notification Service (SNS):** Sends notifications related to activities within the Auto Scaling Group.
+- **Amazon Route 53:** Manages domain name registration and DNS routing.
+
 🧩 Problems Solved
 
 High Availability:
@@ -38,38 +56,6 @@ WordPress is unable to connect to the database.
 Answer: An inappropriate password was used when inputting credentials for the XFS database.
 
 Resolution: wp-config.php was updated with the proper credentials and it was verified the relevant RDS security group rule was right.
-
-
-
-## Architecture Overview
-
-The WordPress website is hosted on EC2 instances within a highly available and secure architecture that includes:
-
-- **Virtual Private Cloud (VPC):** Configured with both public and private subnets across two Availability Zones (AZs) for fault tolerance and high availability.
-- **Internet Gateway:** Allows communication between instances in the VPC and the internet.
-- **Security Groups:** Acts as a virtual firewall to control inbound and outbound traffic.
-- **Public Subnets:** Used for hosting infrastructure components like the NAT Gateway and Application Load Balancer (ALB), which facilitate external access and load balancing.
-- **Private Subnets:** Hosts the web servers to enhance security by limiting direct exposure to the internet.
-- **EC2 Instance Connect Endpoint:** Provides secure SSH access to the EC2 instances in both public and private subnets.
-- **Application Load Balancer (ALB):** Distributes incoming web traffic across multiple EC2 instances for better performance and fault tolerance.
-- **Auto Scaling Group (ASG):** Ensures that the correct number of EC2 instances are running based on traffic, providing elasticity and availability.
-- **Amazon RDS:** Managed relational database service for storing WordPress data.
-- **Amazon EFS:** A scalable file storage system for storing WordPress files across multiple instances.
-- **AWS Certificate Manager:** Provides SSL/TLS certificates to secure communications between users and the web servers.
-- **AWS Simple Notification Service (SNS):** Sends notifications related to activities within the Auto Scaling Group.
-- **Amazon Route 53:** Manages domain name registration and DNS routing.
-
-## Challenges and Solutions
-
-### Challenge 1: **EC2 Instances Unable to Connect to EFS**
-- **Solution:** Adjusted security group rules to allow NFS (port 2049) traffic, enabling the EC2 instances to mount the EFS file system correctly.
-
-### Challenge 2: **WordPress Failing to Connect to the Database**
-- **Solution:** Verified the database credentials in the `wp-config.php` file and updated the RDS security group rules to allow connections from the web servers.
-
-### Challenge 3: **Instances Not Registering with Application Load Balancer (ALB)**
-- **Solution:** Corrected the health check path in the ALB settings and ensured that the instances responded correctly to the health check requests.
-
 ## Deployment Scripts
 
 ### WordPress Installation Script
