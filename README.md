@@ -138,7 +138,9 @@ sudo vi /var/www/html/wp-config.php
 
 # restart the webserver
 sudo service httpd restart
-Auto Scaling Group Launch Template Script
+
+## Deployment Scripts
+###Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 
 bash
