@@ -138,8 +138,7 @@ sudo vi /var/www/html/wp-config.php
 
 # restart the webserver
 sudo service httpd restart
-
-### Auto Scaling Group Launch Template Script
+Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 
 bash
@@ -201,11 +200,11 @@ chown apache:apache -R /var/www/html
 # restart the webserver
 sudo service httpd restart
 How to Use
-Clone this repository to your local machine.
+Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/Simran-Kaur1996/Deploy_a-WordPress_on_AWS.git
+git clone https://github.com/your-repository-name/wordpress-on-aws.git
 cd wordpress-on-aws
 Follow the AWS documentation to create the required resources (VPC, subnets, Internet Gateway, etc.) as outlined in the architecture overview.
 
