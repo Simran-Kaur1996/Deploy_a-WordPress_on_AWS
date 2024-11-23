@@ -5,7 +5,41 @@ This repository contains the resources and scripts used to deploy a WordPress we
 
 ## Problem Statement
 
-The goal of this project was to set up a scalable, fault-tolerant, and secure WordPress website on AWS. The website needs to handle dynamic traffic by scaling up and down based on demand, ensuring high availability across multiple Availability Zones (AZs), and providing secure access through encrypted connections. Additionally, it should make use of AWS’s managed services to reduce the operational overhead of managing infrastructure.
+The purpose of the project was to deploy a secure, scalable and resilient WordPress website utilizing the AWS infrastructure. The website has to be able to reactively adjust its level of resources with respect to traffic that would be witnessed at a given time, be distributed for resilience across at least two availability zones with appropriate security measures in place that would include encryption. In turn, it should also leverage the AWS owned services to reduce the workload associated with the management of the infrastructure. 
+
+🧩 Problems Solved
+
+High Availability:
+
+Guarantees that the failure of one Availability Zone will not affect the website.
+
+Scalability:
+
+Automatically adjusts the resources based on the traffic levels.
+
+Enhanced Security:
+
+Removal of the threat to the web servers and the data through Private subnets and security groups.
+
+Simplified Management:
+
+Less administrative effort because of AWS RDS and EFS. 
+
+🛑 Issues Faced and Resolutions
+
+EC2 instances not connecting to the EFS
+
+Answer: This was due to the application of incorrect security group rules to restrict NFS network traffic.
+
+Resolution: NFS (Port 2049) traffic is allowed in EFS security groups.
+
+WordPress is unable to connect to the database.
+
+Answer: An inappropriate password was used when inputting credentials for the XFS database.
+
+Resolution: wp-config.php was updated with the proper credentials and it was verified the relevant RDS security group rule was right.
+
+
 
 ## Architecture Overview
 
