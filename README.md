@@ -49,7 +49,7 @@ The WordPress website is hosted on EC2 instances within a highly available and s
 ### WordPress Installation Script
 
 This script is used for the initial setup of the WordPress application on an EC2 instance. It includes steps for installing Apache, PHP, MySQL, and mounting Amazon EFS to the instance.
-
+```bash
 # create to root user
 sudo su
 
@@ -125,11 +125,12 @@ sudo vi /var/www/html/wp-config.php
 
 # restart the webserver
 sudo service httpd restart
+```
 
 
 Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
-
+```bash
 # update the software packages on the ec2 instance 
 sudo yum update -y
 
@@ -185,12 +186,10 @@ chown apache:apache -R /var/www/html
 
 # restart the webserver
 sudo service httpd restart
-
+```
 How to Use
 Clone this repository to your local machine:
 
-bash
-Copy code
 git clone https://github.com/your-repository-name/wordpress-on-aws.git
 cd wordpress-on-aws
 Follow the AWS documentation to create the required resources (VPC, subnets, Internet Gateway, etc.) as outlined in the architecture overview.
