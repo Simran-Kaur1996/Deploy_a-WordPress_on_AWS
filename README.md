@@ -190,7 +190,7 @@ sudo service httpd restart
 How to Use
 Clone this repository to your local machine:
 
-git clone https://github.com/your-repository-name/wordpress-on-aws.git
+git clonehttps://github.com/Simran-Kaur1996/Deploy_a-WordPress_on_AWS.git
 cd wordpress-on-aws
 Follow the AWS documentation to create the required resources (VPC, subnets, Internet Gateway, etc.) as outlined in the architecture overview.
 
