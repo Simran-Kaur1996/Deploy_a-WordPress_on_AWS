@@ -205,7 +205,7 @@ Clone this repository to your local machine.
 
 bash
 Copy code
-git clone https://github.com/your-repository-name/wordpress-on-aws.git
+git clone https://github.com/Simran-Kaur1996/Deploy_a-WordPress_on_AWS.git
 cd wordpress-on-aws
 Follow the AWS documentation to create the required resources (VPC, subnets, Internet Gateway, etc.) as outlined in the architecture overview.
 
