@@ -128,7 +128,7 @@ sudo service httpd restart
 ```
 
 
-Auto Scaling Group Launch Template Script
+### **Auto Scaling Group Launch Template Script**
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 ```bash
 # update the software packages on the ec2 instance 
@@ -199,5 +199,6 @@ Use the provided scripts to set up the WordPress application on EC2 instances wi
 Configure the Auto Scaling Group, Load Balancer, and other services as per the architecture.
 
 Access the WordPress website through the Load Balancer's DNS name.
+## **Deployed Website**
 
-Deployed Website
+![WordPress on AWS](screenshot_of_website_one.png)
