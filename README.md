@@ -1,71 +1,50 @@
-
-# Deployed and hosted a highly available Wordpress application using EC2 , RDS ,Route53 , ASG , and VPC
-
+Deployed and Hosted a Highly Available WordPress Application using EC2, RDS, Route53, ASG, and VPC
 This repository contains the resources and scripts used to deploy a WordPress website on Amazon Web Services (AWS). The project leverages various AWS services to ensure high availability, scalability, and security for the WordPress application.
 
-## Architecture Overview:
+Architecture Overview:
 ![WordPress on AWS](2._Host_a_WordPress_Website_on_AWS_Architecture.png)
 
-## Problem Statement
+Problem Statement
+The purpose of the project was to deploy a secure, scalable, and resilient WordPress website utilizing the AWS infrastructure. The website must adjust its resource levels based on traffic, be distributed across at least two Availability Zones (AZs) for resilience, and include appropriate security measures such as encryption. The application should also leverage AWS-managed services to reduce the workload associated with infrastructure management.
 
-The purpose of the project was to deploy a secure, scalable and resilient WordPress website utilizing the AWS infrastructure. The website has to be able to reactively adjust its level of resources with respect to traffic that would be witnessed at a given time, be distributed for resilience across at least two availability zones with appropriate security measures in place that would include encryption. In turn, it should also leverage the AWS owned services to reduce the workload associated with the management of the infrastructure. 
-
-## Architecture Overview
-
+Architecture Overview
 The WordPress website is hosted on EC2 instances within a highly available and secure architecture that includes:
 
-- **Virtual Private Cloud (VPC):** Configured with both public and private subnets across two Availability Zones (AZs) for fault tolerance and high availability.
-- **Internet Gateway:** Allows communication between instances in the VPC and the internet.
-- **Security Groups:** Acts as a virtual firewall to control inbound and outbound traffic.
-- **Public Subnets:** Used for hosting infrastructure components like the NAT Gateway and Application Load Balancer (ALB), which facilitate external access and load balancing.
-- **Private Subnets:** Hosts the web servers to enhance security by limiting direct exposure to the internet.
-- **EC2 Instance Connect Endpoint:** Provides secure SSH access to the EC2 instances in both public and private subnets.
-- **Application Load Balancer (ALB):** Distributes incoming web traffic across multiple EC2 instances for better performance and fault tolerance.
-- **Auto Scaling Group (ASG):** Ensures that the correct number of EC2 instances are running based on traffic, providing elasticity and availability.
-- **Amazon RDS:** Managed relational database service for storing WordPress data.
-- **Amazon EFS:** A scalable file storage system for storing WordPress files across multiple instances.
-- **AWS Certificate Manager:** Provides SSL/TLS certificates to secure communications between users and the web servers.
-- **AWS Simple Notification Service (SNS):** Sends notifications related to activities within the Auto Scaling Group.
-- **Amazon Route 53:** Manages domain name registration and DNS routing.
-
+Virtual Private Cloud (VPC): Configured with both public and private subnets across two Availability Zones (AZs) for fault tolerance and high availability.
+Internet Gateway: Allows communication between instances in the VPC and the internet.
+Security Groups: Acts as a virtual firewall to control inbound and outbound traffic.
+Public Subnets: Hosts infrastructure components like the NAT Gateway and Application Load Balancer (ALB) for external access and load balancing.
+Private Subnets: Hosts the web servers to enhance security by limiting direct exposure to the internet.
+EC2 Instance Connect Endpoint: Provides secure SSH access to the EC2 instances in both public and private subnets.
+Application Load Balancer (ALB): Distributes incoming web traffic across multiple EC2 instances for better performance and fault tolerance.
+Auto Scaling Group (ASG): Ensures that the correct number of EC2 instances are running based on traffic, providing elasticity and availability.
+Amazon RDS: Managed relational database service for storing WordPress data.
+Amazon EFS: Scalable file storage system for storing WordPress files across multiple instances.
+AWS Certificate Manager: Provides SSL/TLS certificates to secure communications between users and web servers.
+AWS Simple Notification Service (SNS): Sends notifications related to activities within the Auto Scaling Group.
+Amazon Route 53: Manages domain name registration and DNS routing.
 🧩 Problems Solved
 
-High Availability:
-
-Guarantees that the failure of one Availability Zone will not affect the website.
-
-Scalability:
-
-Automatically adjusts the resources based on the traffic levels.
-
-Enhanced Security:
-
-Removal of the threat to the web servers and the data through Private subnets and security groups.
-
-Simplified Management:
-
-Less administrative effort because of AWS RDS and EFS. 
-
+High Availability: Guarantees that the failure of one Availability Zone will not affect the website.
+Scalability: Automatically adjusts resources based on traffic levels.
+Enhanced Security: Private subnets and security groups ensure data and server security.
+Simplified Management: AWS RDS and EFS simplify administrative efforts.
 🛑 Issues Faced and Resolutions
 
-EC2 instances not connecting to the EFS
+EC2 instances not connecting to the EFS:
 
-Answer: This was due to the application of incorrect security group rules to restrict NFS network traffic.
+Cause: Incorrect security group rules for NFS network traffic.
+Resolution: Allowed NFS (Port 2049) traffic in EFS security groups.
+WordPress unable to connect to the database:
 
-Resolution: NFS (Port 2049) traffic is allowed in EFS security groups.
+Cause: Incorrect password for the XFS database.
+Resolution: Updated the wp-config.php with correct credentials and verified the RDS security group rule.
+Deployment Scripts
+WordPress Installation Script
+This script is used for the initial setup of the WordPress application on an EC2 instance. It includes steps for installing Apache, PHP, MySQL, and mounting Amazon EFS to the instance.
 
-WordPress is unable to connect to the database.
-
-Answer: An inappropriate password was used when inputting credentials for the XFS database.
-
-Resolution: wp-config.php was updated with the proper credentials and it was verified the relevant RDS security group rule was right.
-## Deployment Scripts
-
-### WordPress Installation Script
-
-This script is used for the initial setup of the WordPress application on an EC2 instance. It includes steps for installing Apache, PHP, MySQL, and mounting the Amazon EFS to the instance.
-
-```bash
+bash
+Copy code
 # create to root user
 sudo su
 
@@ -141,10 +120,7 @@ sudo vi /var/www/html/wp-config.php
 
 # restart the webserver
 sudo service httpd restart
-
-
-
-### Auto Scaling Group Launch Template Script
+Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 
 bash
@@ -220,4 +196,6 @@ Configure the Auto Scaling Group, Load Balancer, and other services as per the a
 
 Access the WordPress website through the Load Balancer's DNS name.
 
-Deployed Website ![WordPress on AWS](screenshot_of_website_one.png)
+
+Deployed Website
+ ![WordPress on AWS](screenshot_of_website_one.png)  
