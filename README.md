@@ -3,6 +3,9 @@
 
 This repository contains the resources and scripts used to deploy a WordPress website on Amazon Web Services (AWS). The project leverages various AWS services to ensure high availability, scalability, and security for the WordPress application.
 
+## Architecture Overview:
+![WordPress on AWS](Host_a_WordPress_Website_on_AWS_Architecture.png)
+
 ## Problem Statement
 
 The purpose of the project was to deploy a secure, scalable and resilient WordPress website utilizing the AWS infrastructure. The website has to be able to reactively adjust its level of resources with respect to traffic that would be witnessed at a given time, be distributed for resilience across at least two availability zones with appropriate security measures in place that would include encryption. In turn, it should also leverage the AWS owned services to reduce the workload associated with the management of the infrastructure. 
@@ -139,8 +142,9 @@ sudo vi /var/www/html/wp-config.php
 # restart the webserver
 sudo service httpd restart
 
-## Deployment Scripts
-###Auto Scaling Group Launch Template Script
+
+
+### Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 
 bash
