@@ -50,7 +50,6 @@ The WordPress website is hosted on EC2 instances within a highly available and s
 
 This script is used for the initial setup of the WordPress application on an EC2 instance. It includes steps for installing Apache, PHP, MySQL, and mounting Amazon EFS to the instance.
 
-```bash
 # create to root user
 sudo su
 
@@ -127,14 +126,10 @@ sudo vi /var/www/html/wp-config.php
 # restart the webserver
 sudo service httpd restart
 
-```bash
 
 Auto Scaling Group Launch Template Script
 This script is included in the launch template for the Auto Scaling Group, ensuring that new instances are configured correctly with the necessary software and settings.
 
-
-```bash
-#!/bin/bash
 # update the software packages on the ec2 instance 
 sudo yum update -y
 
