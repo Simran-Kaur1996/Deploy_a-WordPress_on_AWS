@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress.com - Themes - Aether\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-12T01:49:25+00:00\n"
+"PO-Revision-Date: 2024-11-11 15:28:57+0000\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+
+#: patterns/header-image.php
+msgctxt "Pattern title"
+msgid "Header with Image"
+msgstr "Antet cu imagine"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr "Extrem de mare"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Antet"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Subsol"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Foarte mare"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Mediu"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Mare"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 5"
+msgstr "A cincea culoare"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 3"
+msgstr "A treia culoare"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 4"
+msgstr "A patra culoare"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Small"
+msgstr "Foarte, foarte mic (2X)"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr "Foarte mic"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Mic"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Mediu"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Mare"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Extra Large"
+msgstr "Foarte mare"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Chivo"
+msgstr "Chivo"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Mic"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Gentium Plus"
+msgstr "Gentium Plus"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 1"
+msgstr "Primul gradient"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 6"
+msgstr "Al 6-lea gradient"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 5"
+msgstr "Al 5-lea gradient"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 4"
+msgstr "Al 4-lea gradient"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 3"
+msgstr "Al 3-lea gradient"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 2"
+msgstr "Al 2-lea gradient"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Duotone 1"
+msgstr "Duotone 1"
+
+#: styles/colors/slate-gray.json
+msgctxt "Style variation name"
+msgid "Slate gray"
+msgstr "Gri ardezie"
+
+#: styles/colors/mossy-green.json
+msgctxt "Style variation name"
+msgid "Mossy green"
+msgstr "Verde ca mușchiul"
+
+#: patterns/about.php
+msgctxt "Pattern title"
+msgid "About"
+msgstr "Despre"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "Subsol"
+
+#: patterns/hidden-404.php
+#: patterns/hidden-no-search-results.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 1"
+msgstr "Prima culoare"
+
+#: patterns/products.php
+msgctxt "Pattern title"
+msgid "Products"
+msgstr "Produse"
+
+#: patterns/notice.php
+msgctxt "Pattern title"
+msgid "Site-wide notice"
+msgstr "Notificare pe întreg site-ul"
+
+#: patterns/ig-feed.php
+msgctxt "Pattern title"
+msgid "Instagram feed"
+msgstr "Flux Instagram"
+
+#: patterns/header-content.php
+msgctxt "Pattern title"
+msgid "Header content"
+msgstr "Conținut antet"
+
+#: styles/block/section-3.json
+msgctxt "Style variation name"
+msgid "Style 3"
+msgstr "Al 3-lea stil"
+
+#: styles/block/section-2.json
+msgctxt "Style variation name"
+msgid "Style 2"
+msgstr "Al 2-lea stil"
+
+#: styles/block/section-1.json
+msgctxt "Style variation name"
+msgid "Style 1"
+msgstr "Primul stil"
+
+#: patterns/hidden-no-search-results.php:11
+msgctxt "Text explaining that there are no results returned from a search"
+msgid "No search results."
+msgstr "Niciun rezultat de căutare."
+
+#: patterns/ig-feed.php:18
+msgid "Follow us"
+msgstr "Urmărește-ne"
+
+#: patterns/products.php:86
+msgid "Shop on etsy"
+msgstr "Cumpără pe Etsy"
+
+#: patterns/products.php:18
+msgid "Best sellers"
+msgstr "Cele mai bine vândute"
+
+#: patterns/notice.php:14
+msgid "Shop our newest collection on Etsy"
+msgstr "Cumpără pe Etsy cea mai nouă colecție a noastră"
+
+#. Description of the theme
+#: style.css
+msgid "Aether is a store theme designed for small jewelry and accessories brands. Perfect for creators looking to highlight the unique beauty and craftsmanship of their handmade items."
+msgstr "Aether este o temă pentru magazine proiectată pentru branduri mici de bijuterii și accesorii. Este perfectă pentru creatorii care doresc să evidențieze frumusețea și măiestria unică a pieselor lor realizate manual."
+
+#: patterns/hidden-404.php:20
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Se pare că nu am găsit nimic la această locație. Încerci o nouă căutare?"
+
+#: patterns/hidden-404.php:16
+msgctxt "Heading for a web page that is not found"
+msgid "Oops! That page can’t be found."
+msgstr "Hopa! Acea pagină nu poate fi găsită."
+
+#: patterns/footer.php:81
+msgid "Designed with <a href=\"https://wordpress.org\" rel=\"nofollow\">WordPress</a> "
+msgstr "Proiectat cu <a href=\"https://wordpress.org\" rel=\"nofollow\">WordPress</a>"
+
+#: patterns/footer.php:54
+msgid "Contact"
+msgstr "Contact"
+
+#: patterns/footer.php:18
+msgid "Subscbribe"
+msgstr "Abonează-te"
+
+#: patterns/about.php:23
+msgid "Our philosophy"
+msgstr "Filozofia noastră"
+
+#: patterns/footer.php:26
+msgid "Be the first to know about new collections &amp; exclusive offers."
+msgstr "Fii primul care află despre colecțiile noi și ofertele exclusive."

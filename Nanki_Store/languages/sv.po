@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress.com - Themes - Aether\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-13T01:47:33+00:00\n"
+"PO-Revision-Date: 2024-11-12 14:56:54+0000\n"
+"Language: sv_SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+
+#: patterns/header-image.php
+msgctxt "Pattern title"
+msgid "Header with Image"
+msgstr "Sidhuvud med bild"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr "2X stor"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Sidhuvud"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Sidfot"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X Small"
+msgstr "XXS"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Extra stor"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Medium"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Stor"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 5"
+msgstr "Färg 5"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 3"
+msgstr "Färg 3"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 4"
+msgstr "Färg 4"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Duotone 1"
+msgstr "Duotone 1"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Text to Transparent"
+msgstr "Text till transparent"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 1"
+msgstr "Gradient 1"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 2"
+msgstr "Gradient 2"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 3"
+msgstr "Gradient 3"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 4"
+msgstr "Gradient 4"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 5"
+msgstr "Gradient 5"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient 6"
+msgstr "Gradient 6"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Small"
+msgstr "XXS"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr "XS"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Liten"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Medium"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Stor"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Extra Large"
+msgstr "Extra stor"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Chivo"
+msgstr "Chivo"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Liten"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Gentium Plus"
+msgstr "Gentium Plus"
+
+#: styles/colors/mossy-green.json
+msgctxt "Style variation name"
+msgid "Mossy green"
+msgstr "Mossgrön"
+
+#: styles/colors/slate-gray.json
+msgctxt "Style variation name"
+msgid "Slate gray"
+msgstr "Skiffergrå"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X Large"
+msgstr "XXL"
+
+#: patterns/about.php
+msgctxt "Pattern title"
+msgid "About"
+msgstr "Om"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "Sidfot"
+
+#: patterns/hidden-404.php
+#: patterns/hidden-no-search-results.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: styles/colors/mossy-green.json
+#: styles/colors/slate-gray.json
+#: theme.json
+msgctxt "Color name"
+msgid "Color 1"
+msgstr "Färg 1"
+
+#: styles/block/section-3.json
+msgctxt "Style variation name"
+msgid "Style 3"
+msgstr "Stil 3"
+
+#: styles/block/section-2.json
+msgctxt "Style variation name"
+msgid "Style 2"
+msgstr "Stil 2"
+
+#: styles/block/section-1.json
+msgctxt "Style variation name"
+msgid "Style 1"
+msgstr "Stil 1"
+
+#: patterns/products.php
+msgctxt "Pattern title"
+msgid "Products"
+msgstr "Produkter"
+
+#: patterns/ig-feed.php
+msgctxt "Pattern title"
+msgid "Instagram feed"
+msgstr "Instagram-flöde"
+
+#: patterns/hidden-no-search-results.php:11
+msgctxt "Text explaining that there are no results returned from a search"
+msgid "No search results."
+msgstr "Inga sökresultat."
+
+#: patterns/ig-feed.php:18
+msgid "Follow us"
+msgstr "Följ oss"
+
+#: patterns/products.php:18
+msgid "Best sellers"
+msgstr "Bästsäljare"
+
+#: patterns/products.php:86
+msgid "Shop on etsy"
+msgstr "Handla på etsy"
+
+#: patterns/notice.php:14
+msgid "Shop our newest collection on Etsy"
+msgstr "Handla vår nyaste kollektion på Etsy"
+
+#: patterns/footer.php:81
+msgid "Designed with <a href=\"https://wordpress.org\" rel=\"nofollow\">WordPress</a> "
+msgstr "Designad med <a href=\"https://wordpress.org\" rel=\"nofollow\">WordPress</a> "
+
+#: patterns/hidden-404.php:20
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Det verkar som om inget hittades på denna plats. Kanske prova en sökning?"
+
+#: patterns/hidden-404.php:16
+msgctxt "Heading for a web page that is not found"
+msgid "Oops! That page can’t be found."
+msgstr "Hoppsan! Den sidan kan inte hittas."
+
+#: patterns/footer.php:54
+msgid "Contact"
+msgstr "Kontakt"
+
+#: patterns/footer.php:18
+msgid "Subscbribe"
+msgstr "Prenumerera"
+
+#: patterns/about.php:23
+msgid "Our philosophy"
+msgstr "Vår filosofi"
+
+#: patterns/footer.php:26
+msgid "Be the first to know about new collections &amp; exclusive offers."
+msgstr "Bli först med att få veta om nya kollektioner och exklusiva erbjudanden."
